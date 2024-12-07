@@ -1,0 +1,646 @@
+/* Nav Menu Custom CSS */
+
+@media only screen and (min-width: 991px)  {
+    /* Your styles for medium screens go here */
+    .header-section .navbar-nav li>  .dropdown-menu.main-menu li> ul{
+
+      left: 95% !important;
+  
+  }
+    
+  
+  }
+  @media only screen and (min-width: 500px) and (max-width: 991px) {
+    /* Your styles for medium screens go here */
+    
+  .header-section .navbar-nav li > .dropdown-menu {
+      position: absolute;
+      top: 0px;
+      left: 200px;
+      transform: translateX(-50%);
+      min-width: 180px;
+      background: #1F2340;
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.3s;
+      z-index: 999;
+      display: none;
+  }
+  .header-section .navbar .navbar-collapse .navbar-nav .nav-item .dropdown-menu li a {
+      
+      padding: 0 10px !important
+  
+  }
+  }
+  @media only screen  and (max-width: 500px) {
+    /* Your styles for medium screens go here */
+    
+  .header-section .navbar-nav li > .dropdown-menu {
+      position: absolute;
+      top: 0px;
+      left: 150px;
+      transform: translateX(-50%);
+      min-width: 130px;
+      background: #1F2340;
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.3s;
+      z-index: 999;
+      display: none;
+  }
+  .header-section .navbar-nav li > .dropdown-menu.main-menu li:hover ul {
+      visibility: visible !important;
+      position: absolute;
+      opacity: 1 !important;
+      left: 120%;
+      top: 0;
+      background-color: #ffffff;
+  }
+  .header-section .navbar .navbar-collapse .navbar-nav .nav-item .dropdown-menu li a {
+      
+      padding: 0 10px !important
+  
+  }
+  }
+  
+  .current-menu-ancestor > a {
+    color: #1A4DBE !important;
+  }
+  
+  .header-section .navbar-nav li.current-menu-item >a{
+    color: #1A4DBE;
+  }
+  .header-section .navbar-nav li a:hover{
+    color: #1A4DBE;
+  }
+  .header-section .navbar-nav li a{
+     
+      padding: 0 10px;
+      text-transform: capitalize;
+      font-weight: 600;
+      transition: 0.3s;
+      color: #2c3655;
+      text-decoration: none;
+  }
+  
+  .header-section .navbar-nav li:hover  .dropdown-menu{
+  
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: block;
+   
+  
+  }
+  .dropdown-menu.main-menu.shadow.show{
+    display: none;
+  }
+  .header-section .navbar-nav li:hover .dropdown-menu.main-menu.shadow.show{
+    display: block;
+  }
+  .header-section .navbar-nav li>  .dropdown-menu.main-menu li> ul{
+     
+      visibility: hidden !important;
+      position: absolute;
+      opacity: 0 !important;
+      left: 145%;
+      top: 0;
+      background-color: #ffffff;
+  
+  }
+  .header-section .navbar-nav li>  .dropdown-menu.main-menu li:hover ul{
+     
+      visibility: visible !important;
+      position: absolute;
+      opacity: 1 !important;
+      left: 145%;
+      top: 0;
+      background-color: #ffffff;
+  
+  }
+  
+  
+  .menu-item-has-children {
+    padding-right: 10px;
+  }
+  
+  .menu-item-has-children.dropdown.has-dropdown> a::after {
+    position: absolute;
+    content: "\f105";
+    border: none;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    transform: rotate(90deg);
+    font-size: 16px;
+    z-index: 99;
+    margin-left: 6px;
+  }
+  
+  
+  
+  
+  /* Nav Menu Custom CSS End */
+  
+  .header-section {
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background: #fff;
+  }
+  
+  .header-section.header-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.3);
+  }
+  
+  .header-section .navbar-toggler {
+    padding-right: 0;
+    display: none;
+    border: none;
+  }
+  
+  .header-section .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  
+  .header-section .navbar-toggler i {
+    color: #1A4DBE;
+  }
+  
+  .header-section .navbar {
+    padding: 30px 15px;
+  }
+  
+  .header-section .navbar .navbar-collapse .navbar-nav .nav-item .nav-link, .header-section .navbar .navbar-collapse .navbar-nav .nav-item .dropdown-item {
+    font-weight: 500;
+    padding: 0 10px;
+    color: #2c3655;
+    text-transform: capitalize;
+    font-weight: 600;
+    transition: 0.3s;
+  }
+  
+  .header-section .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover, .header-section .navbar .navbar-collapse .navbar-nav .nav-item .dropdown-item:hover {
+    color: #1A4DBE;
+    transition: 0.3s;
+  }
+  
+  .header-section .navbar .navbar-collapse .navbar-nav .nav-item .nav-link.active, .header-section .navbar .navbar-collapse .navbar-nav .nav-item .dropdown-item.active {
+    color: #1A4DBE;
+  }
+  
+  .header-section .navbar .navbar-collapse .navbar-nav .nav-item .nav-link.dropdown-toggle::after {
+    vertical-align: 0;
+    background-image: url(../images/icon/menu-down.png);
+    background-repeat: no-repeat;
+    background-size: 85%;
+    border: none;
+    margin-left: 5px;
+    width: 15px;
+    height: 11px;
+  }
+  
+  .header-section .navbar .navbar-collapse .navbar-nav .nav-item .dropdown-menu {
+    background-color: #ffffff;
+  }
+  
+  .header-section .navbar .navbar-collapse .navbar-nav .nav-item .dropdown-menu li a {
+    display: block;
+    padding: 5px 15px;
+    transition: 0.3s;
+  }
+  
+  .header-section .navbar .navbar-collapse .navbar-nav .nav-item .dropdown-menu li a:hover {
+    background: #1A4DBE;
+    transition: 0.3s;
+    color: #ffffff !important;
+  }
+  
+  .header-section .navbar .navbar-collapse .navbar-nav .nav-item .dropdown-menu .dropend .dropdown-menu {
+    margin-left: 20%;
+  }
+  
+  .header-section .navbar .navbar-collapse .right-area {
+    margin-left: 30px;
+  }
+  
+  .header-section .nav-item.main-navbar .main-menu {
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 180px;
+    background: #1F2340;
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.25);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    z-index: 999;
+  }
+  
+  .header-section .nav-item.main-navbar .main-menu .sub-navbar {
+    position: relative;
+  }
+  
+  .header-section .nav-item.main-navbar .main-menu .sub-navbar .sub-menu {
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+    right: -80%;
+    top: 0;
+  }
+  
+  .header-section .nav-item.main-navbar .main-menu .sub-navbar:hover .sub-menu {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .header-section .nav-item.main-navbar:hover .main-menu {
+    opacity: 1;
+    visibility: visible;
+    top: 30px;
+  }
+  
+  .header-section.register {
+    border-bottom: 1px solid #D8DCE7;
+  }
+  
+  .header-section.register .nav-item {
+    font-weight: 500;
+  }
+  
+  .header-section.register .right-area {
+    margin-left: 30px;
+  }
+
+  /* Breadcrumb Section */
+
+  .banner-section .overlay {
+    background-color: #F5FAFF;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: right bottom 90px;
+  }
+  
+  .banner-section .overlay .banner-content {
+    padding: 355px 0 320px;
+  }
+  
+  .banner-section .overlay .banner-content .top-area p {
+    width: 80%;
+  }
+  
+  .banner-section .overlay .banner-content .cmn-btn {
+    margin-right: 20px;
+  }
+  
+  .banner-section .partner {
+    transform: translateZ(10px);
+  }
+  
+  .banner-section .partner .partner-box {
+    padding: 60px 40px 60px 0px;
+    position: relative;
+  }
+  
+  .banner-section .partner .partner-box::before {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 500%;
+    content: "";
+    background: #ffffff;
+    box-shadow: 0px 12px 24px rgba(47, 65, 129, 0.1);
+    border-radius: 0px 20px 20px 0px;
+    z-index: -1;
+  }
+  
+  .banner-section .partner .partner-box .slick-track {
+    display: flex;
+    align-items: center;
+  }
+  
+  .banner-section .partner .partner-box .slick-track img {
+    margin: auto;
+    transition: ease 0.3s;
+  }
+  
+  .banner-section .partner .partner-box .slick-track img:hover {
+    filter: grayscale(0);
+    transition: ease 0.3s;
+  }
+  
+  .banner-section.inner-banner .banner-content {
+    padding: 170px 0 170px;
+  }
+  
+  .banner-section.inner-banner .banner-content .main-content .breadcrumb-area {
+    margin-top: 10px;
+  }
+  
+  .banner-section.inner-banner .banner-content .main-content .breadcrumb-area .breadcrumb li {
+    display: flex;
+    align-items: center;
+  }
+  
+  .banner-section.inner-banner .banner-content .main-content .breadcrumb-area .breadcrumb li a {
+    color: #2c3655;
+  }
+  
+  .banner-section.inner-banner .banner-content .main-content .breadcrumb-area .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+    background-image: url(../images/icon/arrow-right.png);
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+    padding: 0 10px;
+    content: "";
+  }
+  
+  .banner-section.about .overlay {
+    background-repeat: no-repeat;
+    background-position: left 120px, right bottom;
+    background-size: contain;
+  }
+  
+  .banner-section.career-single .overlay {
+    background-image: url(../images/career-single-banner.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+  }
+  
+  .banner-section.account .overlay {
+    background-image: url(../images/account-banner.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+  }
+  
+  .banner-section.account .overlay .banner-content {
+    padding: 332px 0 214px;
+  }
+  
+  .banner-section.account-details .overlay {
+    background-image: url(../images/account-details-banner.png);
+    background-repeat: no-repeat;
+    background-position: right 10% bottom 30px;
+  }
+  
+  .banner-section.account-details .overlay .banner-content {
+    padding: 298px 0 165px;
+  }
+  
+  .banner-section.card-banner .overlay {
+    background-image: url(../images/card-banner-bg.png), url(../images/card-banner.png);
+    background-repeat: no-repeat;
+    background-position: left bottom, right bottom;
+  }
+  
+  .banner-section.card-banner .overlay .banner-content {
+    padding: 350px 0 233px;
+  }
+  
+  .banner-section.product .overlay {
+    background-image: url(../images/product-banner.png);
+    background-repeat: no-repeat;
+    background-position: right 50px center;
+    background-position-y: 63%;
+  }
+  
+  .banner-section.product .overlay .banner-content {
+    padding: 356px 0 239px;
+  }
+  
+  .banner-section.car-loans .overlay {
+    background-image: url(../images/car-banner.png);
+    background-repeat: no-repeat;
+    background-position: right 50px center;
+    background-position-y: 63%;
+  }
+  
+  .banner-section.car-loans .overlay .banner-content {
+    padding: 307px 0 170px;
+  }
+  
+  .banner-section.business-loan .overlay {
+    background-image: url(../images/business-banner.png);
+    background-repeat: no-repeat;
+    background-position: right 110px bottom;
+  }
+  
+  .banner-section.business-loan .overlay .banner-content {
+    padding: 307px 0 170px;
+  }
+  
+  .banner-section.home-loan .overlay {
+    background-image: url(../images/home-banner.png);
+    background-repeat: no-repeat;
+    background-position: right 110px bottom;
+  }
+  
+  .banner-section.home-loan .overlay .banner-content {
+    padding: 307px 0 170px;
+  }
+  
+  .banner-section.educations-loan .overlay {
+    background-image: url(../images/educations-banner.png);
+    background-repeat: no-repeat;
+    background-position: right 110px bottom;
+  }
+  
+  .banner-section.educations-loan .overlay .banner-content {
+    padding: 307px 0 170px;
+  }
+  
+  .banner-section.personal-loan .overlay {
+    background-image: url(../images/personal-banner.png);
+    background-repeat: no-repeat;
+    background-position: right 110px bottom;
+  }
+  
+  .banner-section.personal-loan .overlay .banner-content {
+    padding: 307px 0 170px;
+  }
+  
+  .banner-section.contact .overlay {
+    background-image: url(../images/contact-banner.png);
+    background-repeat: no-repeat;
+  }
+  
+  .banner-section.contact .overlay .banner-content {
+    padding: 307px 0 170px;
+  }
+  
+  .banner-section.contact .overlay {
+    background-image: url(../images/contact-banner.png);
+    background-repeat: no-repeat;
+    background-position: right 50px bottom;
+  }
+  
+  .banner-section.contact .overlay .banner-content {
+    padding: 307px 0 170px;
+  }
+  
+  .banner-section.remittance .overlay {
+    background-image: url(../images/remittance-Illu.png), url(../images/remittance-city-bg.png);
+    background-repeat: no-repeat;
+    background-position: right bottom, right center;
+  }
+  
+  .banner-section.remittance .overlay .banner-content {
+    padding: 325px 0 275px;
+  }
+  
+  .banner-section.remittance .overlay .banner-content .button-group a {
+    margin-right: 10px;
+  }
+  
+  .banner-section.remittance .bottom-box {
+    margin-top: -125px;
+    transform: translateZ(10px);
+  }
+  
+  .banner-section.remittance .bottom-box .form-content {
+    padding: 30px;
+    background: #ffffff;
+    box-shadow: 0px 12px 24px rgba(47, 65, 129, 0.1);
+    border-radius: 10px;
+  }
+  
+  .banner-section.remittance .bottom-box .form-content form {
+    margin-top: -10px;
+  }
+  
+  .banner-section.remittance .bottom-box .form-content .single-input label {
+    font-weight: 600;
+  }
+  
+  .banner-section.remittance .bottom-box .form-content .single-input .single {
+    padding: 0 20px;
+    background: #F5FAFF;
+    border: 1px solid #EEF1FF;
+    border-radius: 5px;
+  }
+  
+  .banner-section.remittance .bottom-box .form-content .single-input .single input {
+    padding: 0;
+    border: none;
+  }
+  
+  .banner-section.remittance .bottom-box .form-content .single-input .single .nice-select {
+    background: transparent;
+    border-color: transparent;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+  }
+  
+  .banner-section.remittance .bottom-box .form-content .single-input .single .nice-select::after {
+    border-bottom: 2px solid #2C3655;
+    border-right: 2px solid #2C3655;
+    height: 9px;
+    margin-top: -6px;
+    right: 12px;
+    top: 50%;
+    width: 9px;
+  }
+  
+  .banner-section.remittance .bottom-box .form-content .form-bottom {
+    margin-top: 30px;
+  }
+  
+  .banner-section.remittance .bottom-box .form-content .form-bottom .btn-area {
+    padding-left: 10%;
+  }
+  
+  .banner-section.remittance .bottom-box .form-content .form-bottom p span {
+    color: #055C2D;
+  }
+  
+  .banner-section.affiliate .overlay {
+    background-image: unset;
+    border-bottom: 1px dashed #1A4DBE;
+  }
+  
+  .banner-section.affiliate .overlay .banner-content {
+    padding: 265px 0 205px;
+  }
+  
+  .banner-section.affiliate .bottom-box {
+    background-image: url(../images/affiliate-circle.png);
+    background-repeat: no-repeat;
+    background-position: bottom 20px center;
+    margin-top: -158px;
+  }
+  
+  .banner-section.affiliate .bottom-box .main-content .mid-side {
+    width: 160px;
+    height: 160px;
+    background: #ffffff;
+    box-shadow: 0px 6.38298px 12.766px rgba(47, 65, 129, 0.1);
+    border-radius: 80px;
+    position: relative;
+  }
+  
+  .banner-section.affiliate .bottom-box .main-content .mid-side h3 {
+    color: #1A4DBE;
+    margin-top: 0;
+  }
+  
+  .banner-section.affiliate .bottom-box .main-content .mid-side p {
+    color:#055C2D;
+  }
+  
+  .banner-section.affiliate .bottom-box .main-content .mid-side::before, .banner-section.affiliate .bottom-box .main-content .mid-side::after {
+    position: absolute;
+    font-family: 'arafat font';
+    font-size: 24px;
+    color: #1A4DBE;
+  }
+  
+  .banner-section.affiliate .bottom-box .main-content .mid-side::before {
+    content: '\0041';
+    left: -120%;
+    animation: linear infinite;
+    animation-name: run_obj;
+    animation-duration: 2s;
+  }
+  
+  .banner-section.affiliate .bottom-box .main-content .mid-side::after {
+    content: '\0042';
+    right: -120%;
+    animation: linear infinite;
+    animation-name: run_obj_alt;
+    animation-duration: 2s;
+  }
+  
+  .banner-section.affiliate .bottom-box .btn-area a:hover {
+    background-color: #ffffff;
+  }
+  
+  .banner-section.blog .overlay {
+    background-image: url(../images/blog-banner.png);
+    background-repeat: no-repeat;
+    background-position: right 30px bottom;
+  }
+  
+  .banner-section.faqs .overlay {
+    background-image: url(../images/faqs-banner.png);
+    background-repeat: no-repeat;
+    background-position: right 30px bottom;
+  }
+  
+  .banner-section.privacy-content .overlay {
+    background-image: url(../images/privacy-banner.png);
+    background-repeat: no-repeat;
+    background-position: right 30px bottom;
+  }
+  
+  .banner-section.terms .overlay {
+    background-image: url(../images/terms-banner.png);
+    background-repeat: no-repeat;
+    background-position: right 30px bottom;
+  }

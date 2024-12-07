@@ -1,0 +1,176 @@
+  /* ==== 
+  ---------  custom-animation styles start ---------
+  ==== */
+  .push_animat {
+    animation: push_animat 5s linear infinite;
+  }
+  
+  @keyframes push_animat {
+    0% {
+      transform: scale(0.9);
+      opacity: 0.7;
+    }
+    50% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(0.9);
+      opacity: 0.7;
+    }
+  }
+
+
+  
+  .rotate {
+    animation: rotate 20s linear infinite;
+  }
+  .rotate.time_dur {
+    animation-duration: 40s;
+  }
+  
+  .previewSkew {
+    animation: previewSkew 5s linear infinite;
+  }
+  
+  @keyframes previewSkew {
+    0% {
+      transform: translateX(-15px);
+    }
+    50% {
+      transform: translateX(15px) rotate(20deg) scale(0.8);
+      opacity: 0.7;
+    }
+    100% {
+      transform: translateX(-15px);
+    }
+  }
+  .previewShapeRevX {
+    animation: previewShapeRevX 5s linear infinite;
+  }
+  
+  @keyframes previewShapeRevX {
+    0% {
+      transform: translateX(15px);
+    }
+    50% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(15px);
+    }
+  }
+  .previewShapeX {
+    animation: previewShapeX 5s linear infinite;
+  }
+  
+  @keyframes previewShapeX {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(15px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  .jello {
+    animation: jello 10s linear infinite;
+  }
+  .jello.duration20s {
+    animation-duration: 20s;
+  }
+  
+  @keyframes jello {
+    from, 11.1%, to {
+      transform: translate3d(0, 0, 0);
+    }
+    22.2% {
+      transform: skewX(-6deg) skewY(-6deg);
+    }
+    33.3% {
+      transform: skewX(6.25deg) skewY(6.25deg);
+    }
+    44.4% {
+      transform: skewX(-6.125deg) skewY(-6.125deg);
+    }
+    55.5% {
+      transform: skewX(6deg) skewY(6.25deg);
+    }
+    66.6% {
+      transform: skewX(-4deg) skewY(-4deg);
+    }
+    77.7% {
+      transform: skewX(4deg) skewY(4deg);
+    }
+    88.8% {
+      transform: skewX(-5deg) skewY(-5deg);
+    }
+  }
+  .animate__jello {
+    animation-name: jello;
+    transform-origin: center;
+  }
+  
+  .fadeInTopLeft {
+    animation: fadeInTopLeft 5s linear infinite;
+  }
+  
+  @keyframes fadeInTopLeft {
+    0% {
+      opacity: 0.3;
+      transform: translate(-20px, -20px);
+    }
+    50% {
+      transform: translate(20px, 20px);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(-20px, -20px);
+      opacity: 0.3;
+    }
+  }
+  .fadeInTopRight {
+    animation: fadeInTopRight 5s linear infinite;
+  }
+  
+  @keyframes fadeInTopRight {
+    0% {
+      opacity: 0.3;
+      transform: translate(-20px, 20px);
+    }
+    50% {
+      transform: translate(20px, -20px);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(-20px, 20px);
+      opacity: 0.3;
+    }
+  }
+  @keyframes previewShapeY {
+    0% {
+      transform: translateY(10px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(10px);
+    }
+  }
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      opacity: 0.5;
+    }
+    50% {
+      transform: scale(1.05);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0.5;
+    }
+  }

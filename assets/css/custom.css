@@ -1,0 +1,194 @@
+/* Common CSS */
+
+/* Color for default blog and other */
+
+:root {
+  --ft--common-white: #fff;
+  --ft--common-black: #031220;
+  --ft--common-black-2: #120101;
+  --ft--common-black-3: #0C140F;
+  --ft--common-black-4: #000000;
+  --ft--common-black-5: #0e1133;
+  --ft--common-green: #26C089;
+  --ft--common-green-2: #3E8454;
+  --ft--common-green-3: #27AA4D;
+  --ft--common-green-4: #20AD96;
+  --ft--common-blue: #4356FF;
+  --ft--common-blue-2: #4270FF;
+  --ft--common-blue-3: #3C66ED;
+  --ft--common-blue-4: #3083FF;
+  --ft--common-cream: #FFF1E0;
+  --ft--common-pink: #FF6470;
+  --ft--common-pink-2: #FC4C56;
+  --ft--common-orange: #F37F43;
+  --ft--common-orange-2: #EE6002;
+  --ft--common-orange-3: #FF9F4B;
+  --ft--common-purple: #E33CFF;
+  --ft--common-purple-2: #E64DFF;
+  --ft--common-yellow: #F5B455;
+  --ft--common-yellow-2: #F47F42;
+  --ft--common-yellow-3: #F4930E;
+  --ft--common-yellow-4: #FFAA2C;
+  --ft--common-yellow-5: #FF8D00;
+  --ft--common-violet: #6151FB;
+  --ft--common-violet-2: #A794C8;
+  --ft--header-primary: #031220;
+  --ft--header-2: #120101;
+  --ft--grey-1: #F1F1F1;
+  --ft--grey-2: #F5F6F8;
+  --ft--grey-3: #F8F8F8;
+  --ft--grey-4: #F7F7F7;
+  --ft--grey-5: #F5F5F5;
+  --ft--grey-6: #DCDCDC;
+  --ft--grey-7: #F9F9F9;
+  --ft--grey-8: #F4FBF9;
+  --ft--grey-9: #F0F8F7;
+  --ft--grey-10: #F3F3F3;
+  --ft--text-body: #49535B;
+  --ft--text-1: #49535B;
+  --ft--text-2: #555C63;
+  --ft--text-3: #777A7C;
+  --ft--text-4: #4B535A;
+  --ft--text-5: #4A545C;
+  --ft--text-6: #6F7377;
+  --ft--text-7: #6B7882;
+  --ft--text-8: #788086;
+  --ft--text-9: #6B737A;
+  --ft--text-10: #828282;
+  --ft--text-11: #5F6160;
+  --ft--text-12: #565958;
+  --ft--text-13: #868D94;
+  --ft--text-14: #56595C;
+  --ft--text-15: #a1a2ab;
+  --ft--theme-1: #3D6CE7;
+  --ft--theme-2: #258E46;
+  --ft--theme-3: #007A70;
+  --ft--border-1: #dedede;
+}
+
+.custom-container {
+  padding: 0 !important;
+}
+
+/* Gap for elementor and section */
+
+.sec-mar {
+  margin: 120px 0 120px 0;
+}
+
+@media screen and (max-width: 991px) {
+  .sec-mar {
+    margin: 80px 0 80px 0;
+  }
+}
+
+/* Section Padding */
+
+.section{
+  padding: 120px 0;
+}
+
+@media screen and (max-width: 767px) {
+  .section{
+    padding: 80px 0;
+  }
+}
+
+/* Footer */
+
+.footer__top ul {
+  list-style: none;
+}
+
+/* Elementor span problem */
+
+span.elementor-edit-link-title {
+  color: #fff;
+  display: inline;
+}
+
+
+.play-card {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+.form-group label {
+  display: block;
+}
+.form-group span {
+  display: block;
+}
+
+.error__area{
+  padding-top: 280px !important;
+}
+
+@media screen and (max-width: 767px) {
+  .error__area{
+    padding-top: 180px !important;
+  }
+}
+
+.user-icon .elementor-icon {
+  background: #5a4bcc;
+  padding: 8px;
+  border-radius: 50%;
+}
+.user-icon .elementor-icon:hover svg path {
+  fill: #ffb200 !important;
+}
+
+.language {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.language .nice-select {
+    background: transparent;
+    border: none;
+    color: inherit;
+    padding-right: 20px;
+    min-width: 70px;
+}
+
+.language .nice-select .list {
+    min-width: 100px;
+    margin-top: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.language .nice-select .option {
+    text-transform: uppercase;
+    padding: 8px 15px;
+    transition: all 0.3s ease;
+}
+
+.language .nice-select .option:hover {
+    background-color: #f8f8f8;
+}
+
+.language .la-globe-europe {
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+/* RTL support */
+.rtl .language .la-globe-europe {
+    margin-right: 0;
+    margin-left: 8px;
+}
+
+.rtl .language .nice-select {
+    padding-right: 0;
+    padding-left: 20px;
+}
+
+
+
